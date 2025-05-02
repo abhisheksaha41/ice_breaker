@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
+print(os.environ["OPENAI_API_KEY"])
+exit()
 
 from ice_breaker import ice_break_with
 
